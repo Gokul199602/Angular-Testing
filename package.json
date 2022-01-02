@@ -11,7 +11,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "build:prod": "ng build --prod",
-    "start:prod": "http-server ./dist -a localhost -p 4200",
+    "start:prod": "http-server ./dist/testapp/ -a localhost -p 4200",
     "build-and-start:prod": "run-s build:prod start:prod",
     "e2e": "start-server-and-test build-and-start:prod http://localhost:4200 cypress:run"
   },
@@ -27,6 +27,7 @@
     "@angular/platform-browser": "~13.1.0",
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
+    "cypress": "^9.2.0",
     "moment": "^2.29.1",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
@@ -44,6 +45,7 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "start-server-and-test": "^1.14.0",
     "typescript": "~4.5.2"
   }
 }
